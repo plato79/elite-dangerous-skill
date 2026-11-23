@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+*.log
+Cargo.json
+Status.json
+Market.json
+ShipLocker.json
+Backpack.json
+ModulesInfo.json
+NavRoute.json
+Outfitting.json
+Shipyard.json
