@@ -8,7 +8,15 @@ The skill also includes optional, read-only helpers for INARA profiles and CMDR-
 
 The portable skill is the entire [`skills/elite-dangerous`](skills/elite-dangerous/) directory, not just `SKILL.md`. It follows the open Agent Skills format and is intended for skills-compatible agents, including Claude Code, Codex, and Hermes. Installation paths, available tools, permissions and invocation vary by host; compatibility with every agent or sandbox is not guaranteed.
 
-Clone the repository:
+With Node.js installed, the open Skills CLI can install it for multiple agents. For example, from the project where you want the skill:
+
+```sh
+npx --yes skills add plato79/elite-dangerous-skill --skill elite-dangerous --agent codex claude-code --copy --yes
+```
+
+This example installs project-scoped copies for Codex and Claude Code. For other supported agents, omit `--agent codex claude-code` and `--yes` to choose interactively, or follow your host's instructions. Review third-party skills before installing them.
+
+Alternatively, install manually. Clone the repository:
 
 ```sh
 git clone https://github.com/plato79/elite-dangerous-skill.git
